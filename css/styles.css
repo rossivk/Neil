@@ -85,7 +85,7 @@ button:hover {
 
 
 .background-img {
-  background-image: url(/assets/images/background-top-section.jpg);
+  background-image: url(../assets/images/background-top-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 15%;
@@ -345,7 +345,7 @@ button.our-work-get-in-touch:hover {
 }
 
 .why-us-background-img {
-  background-image: url(/assets/images/background-top-section.jpg);
+  background-image: url(../assets/images/background-top-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
