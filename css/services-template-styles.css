@@ -1,0 +1,23 @@
+.services {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.services-left {
+  width: 30%;
+  background-color: var(--burntOrange);
+  text-align: left;
+}
+
+.services-left li {
+  list-style-type: disc;
+  color: var(--backgroundSeashell);
+  margin: 10px 5px 10px 0;
+}
+
+.services-right {
+  text-align: left;
+  margin: 25px auto;
+  max-width: 650px;
+}
