@@ -1,18 +1,9 @@
+
 // Nav timeline
-
-
-
 const backgroundMenu = document.getElementsByClassName("nav-container");
 let tl1 = new TimelineLite({ paused: true, reversed: true });
-tl1.from(backgroundMenu, 0.5, { opacity: 0, x: 750 });
+tl1.from(backgroundMenu, 0.5, { opacity: 1, x: 0 });
 
-// window.addEventListener("resize", function () {
-//   if (window.matchMedia("(max-width: 800px)").matches) {
-//     tl1.from(backgroundMenu, 0.5, { opacity: 0, x: 750 });
-//   } else {
-//     tl1.from(backgroundMenu, 0.5, { opacity: 1, x: 0 });
-//   }
-// })
 // Hamburger timeline
 
 const upper = document.getElementsByClassName("upper");
@@ -55,30 +46,29 @@ tl2
 document
   .querySelector(".hamburger-icon")
   .addEventListener("click", function () {
-    tl2.reversed() ? tl2.play() && tl1.play() : tl2.reverse() && tl1.reverse();
+    tl2.reversed() ? tl2.play() && tl1.reverse() : tl2.reverse() && tl1.play();
   });
 
-window.addEventListener("resize", function () {
 
-  tl1.from(backgroundMenu, 0.5, { opacity: 1, x: 0 });
-})
+
 
 ///////////////////////////////////////////////
 
+function openContent() {
+  let y = document.getElementById("dropDownContent");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "block";
+  }
+}
+
+
+
 // function openContent() {
-//   let x = document.getElementById("dropDownContent");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
+//   document.getElementById("dropDownContent").style.display = "block";
 // }
 
-function openContent() {
-  document.getElementById("dropDownContent").style.display = "block";
-}
-
-function closeContent() {
-
-  document.getElementById("dropDownContent").style.display = "none";
-}
+// function closeContent() {
+//   document.getElementById("dropDownContent").style.display = "none";
+// }
