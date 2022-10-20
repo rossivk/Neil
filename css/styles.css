@@ -501,15 +501,21 @@ p.copywright-reserved {
 
   }
 
+  .logo {
+    width: 25%;
+    order: 0;
+
+  }
+
   .logo a img {
     height: 75px;
-    /* float: right; */
-    order: 0;
+    float: left;
+
   }
 
   .nav-menu {
     order: 1;
-    width: 60%;
+    width: 50%;
   }
 
   .nav-container {
@@ -532,6 +538,7 @@ p.copywright-reserved {
     display: inline;
     color: var(--eerieBlack);
     position: relative;
+    margin-right: 25px;
   }
 
   .fa-caret-down::before {
@@ -545,10 +552,19 @@ p.copywright-reserved {
 
   .dropdown-content a {
     color: var(--eerieBlack);
+    padding-left: 10px;
+
+
   }
 
   .nav-link-wrapper {
     flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-link-wrapper li {
+    margin-right: 20px;
+
   }
 
   .hamburger-icon {
@@ -557,12 +573,14 @@ p.copywright-reserved {
 
   .nav_phone-number {
     order: 2;
+    width: 25%;
+
   }
 
   .nav_phone-number .phone-icon {
-    width: 20%;
     float: right;
     padding-right: 10px;
+    width: 10%;
   }
 
   .nav_phone-number .phone-num {
