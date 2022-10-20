@@ -49,18 +49,17 @@ function myFunction() {
       );
 
     // attach the action to the hamburger icon
-
-
     document
       .querySelector(".hamburger-icon")
       .addEventListener("click", function () {
         tl2.reversed() ? tl2.play() && tl1.play() : tl2.reverse() && tl1.reverse();
       });
-  }
-  else {
-    tl1.from(backgroundMenu, 0.5, {
-      opacity: 1, x: 0
-    });
+  } else {
+
+    tl1.set(backgroundMenu, { x: 0, opacity: 0.5 });
+    // tl1.from(backgroundMenu, 0.5, {
+    //   opacity: 1, x: 0
+    // });
   }
 }
 
