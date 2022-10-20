@@ -7,7 +7,6 @@ function myFunction() {
   let tl1 = new TimelineLite({ paused: true, reversed: true });
 
   if (window.innerWidth <= 800) {
-    document.body.style.backgroundColor = "pink";
     tl1.from(backgroundMenu, 0.5, {
       opacity: 0, x: 750
     });
