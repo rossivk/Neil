@@ -1,23 +1,39 @@
-.services {
+.services,
+.faqs {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.services-left {
+.services-left,
+.faqs-left {
   width: 30%;
   background-color: var(--burntOrange);
   text-align: left;
+  padding: 10px;
 }
 
 .services-left li {
-  list-style-type: disc;
+  list-style-type: square;
   color: var(--backgroundSeashell);
   margin: 10px 5px 10px 0;
+}
+
+
+.services-left ul {
+  padding-left: 100px;
 }
 
 .services-right {
   text-align: left;
   margin: 25px auto;
   max-width: 650px;
+}
+
+div.faqs-left li {
+  padding: 10px;
+}
+
+div.faqs-left li a {
+  color: var(--backgroundSeashell);
 }
