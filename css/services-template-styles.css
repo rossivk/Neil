@@ -1,12 +1,11 @@
-.services,
-.faqs {
+.services {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.services-left,
-.faqs-left {
+.services-leftt {
+  color: var(--eerieBlack);
   width: 30%;
   background-color: var(--burntOrange);
   text-align: left;
@@ -21,19 +20,65 @@
 
 
 .services-left ul {
-  padding-left: 100px;
+  text-align: left;
+  padding: 25px 0 0 100px;
 }
 
 .services-right {
   text-align: left;
-  margin: 25px auto;
+  margin: 50px auto;
   max-width: 650px;
 }
 
-div.faqs-left li {
+.faqs {
+  max-width: 1600px;
+  margin: 50px auto;
+}
+
+.faqs-list {
+  max-width: 600px;
+  padding: 10px;
+  text-align: left;
+  margin: 0 auto;
+  background-color: var(--peralBrush)
+}
+
+div.faqs-list li {
   padding: 10px;
 }
 
-div.faqs-left li a {
-  color: var(--backgroundSeashell);
+div.faqs-list li a {
+  color: var(--eerieBlack);
+
+}
+
+.faq-content-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+.faq-content {
+  padding: 50px 25px;
+  text-align: left;
+  background-color: var(--peralBrush)
+}
+
+.back-to-faqs-list {
+  width: 100%;
+  background-color: var(--burntOrange);
+  padding: 25px;
+  /* color: var(--backgroundSeashell); */
+  border-radius: 0;
+  font-size: 1.5rem;
+  ;
+}
+
+.back-to-faqs-list:hover {
+  border: none;
+
+}
+
+.back-to-faqs-list i {
+  padding-right: 10px;
 }
