@@ -1,27 +1,50 @@
+h4.underlined-text {
+  position: relative;
+}
+
+h4.underlined-text::after {
+
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: var(--burntOrange);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.link-with-burnt-orange-color {
+  color: var(--burntOrange);
+  font-weight: 700;
+}
+
 .services {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
+  align-content: flex-start;
 }
 
-.services-leftt {
+.services-left {
   color: var(--eerieBlack);
-  width: 30%;
+  width: 25%;
   background-color: var(--burntOrange);
   text-align: left;
-  padding: 10px;
+  margin: 50px 0 0 10%;
 }
 
 .services-left li {
   list-style-type: square;
   color: var(--backgroundSeashell);
-  margin: 10px 5px 10px 0;
+  margin: 25px 0;
 }
 
 
 .services-left ul {
   text-align: left;
-  padding: 25px 0 0 100px;
+  margin: 0;
+  font-size: 1.125rem;
 }
 
 .services-right {
@@ -35,14 +58,25 @@
   margin: 50px auto;
 }
 
-div.page-title {
-  height: 125px;
+.page-title {
+  /* height: 125px; */
   width: 100%;
   text-align: left;
-  padding: 75px 0 0 10%;
+  padding: 75px 0 75px 10%;
   background-image: url('..//assets/images/background/faqs-background.png');
+  background-position: center;
   background-color: #ff80001a;
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
+
+
+.faq-title h4 {
+  color: var(--burntOrange);
+}
+
+
 
 /* div.page-title::before {
   content: '';
@@ -57,7 +91,7 @@ div.page-title {
 
 
 .faqs-list {
-  padding: 10px;
+  padding: 0 10px;
   text-align: left;
   margin: 0 25px;
   border-left: solid 1px var(--burntOrange);
@@ -78,25 +112,37 @@ div.faqs-list li a {
 
 }
 
+.faq-title,
 .faq-content {
-  padding: 50px 25px;
   text-align: left;
+  padding: 12px 25px;
+  margin: 12px;
 }
 
-.back-to-faqs-list {
+.faq-title {
+  background: rgb(203 83 2 / 20%);
+}
+
+.faq-content {
+  background: rgb(203 83 2 / 5%);
+}
+
+button.back-to-faqs-list {
   width: 100%;
-  background-color: var(--burntOrange);
-  padding: 25px 0 25px 10%;
-  /* color: var(--backgroundSeashell); */
+  background-color: rgba(203, 83, 2, 0.55);
+  margin: 12px 0;
+  padding: 12px 0 12px 10%;
   border-radius: 0;
   font-size: 1.5rem;
   text-align: left;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 
-.back-to-faqs-list:hover {
-  border: none;
-
+button.back-to-faqs-list:hover {
+  background-color: rgba(203, 83, 2, 0.35);
 }
+
 
 .back-to-faqs-list i {
   padding-right: 10px;
@@ -115,4 +161,9 @@ div.faqs-list li a {
 
     margin: 0 50px;
   }
+
+  li.nav-item-sidebar a {
+    color: var(--backgroundSeashell);
+  }
+
 }

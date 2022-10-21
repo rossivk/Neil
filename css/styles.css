@@ -54,6 +54,11 @@ h4 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 h1,
 h2,
 h3,
@@ -64,9 +69,9 @@ h4 {
 button {
   border: none;
   background: transparent;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 10px 20px;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   font-family: 'Karla', sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
@@ -74,10 +79,10 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  border: 1px solid var(--burntOrange);
+  /* transform: scale(1.1); */
+  /* border: 1px solid var(--burntOrange); */
   background-color: transparent;
-  scale: 1.2rem;
+  /* scale: 1.05rem; */
 }
 
 
@@ -446,7 +451,6 @@ button.our-work-get-in-touch:hover {
 
 /* ***************************** */
 footer {
-  height: 250px;
   background-color: var(--burntOrange);
 
 }
@@ -484,6 +488,10 @@ p.copywright-reserved {
 
   h4 {
     font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
   }
 
   a {
