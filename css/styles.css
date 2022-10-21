@@ -232,9 +232,10 @@ button.dropbtn:hover {
 .nav_phone-number {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   /* background-color: var(--burntOrange); */
   width: 20%;
+  /* padding: 10px 0; */
 }
 
 .nav_phone-number .phone-icon {
@@ -244,17 +245,22 @@ button.dropbtn:hover {
 
 .nav_phone-number .phone-num {
   display: none;
+  color: var(--backgroundSeashell);
+
 }
 
 
 .nav_phone-number i {
-  /* width: 2rem; */
+  width: 2rem;
   color: var(--burntOrange);
   font-size: 1.5rem;
   float: right;
 
 }
 
+.hide-on-mobile {
+  display: none;
+}
 
 .tittle-name {
   background: rgba(203, 83, 2, 0.35);
@@ -579,7 +585,11 @@ p.copywright-reserved {
 
   .nav_phone-number {
     order: 2;
-    width: 25%;
+    background-color: var(--burntOrange);
+    padding: 10px 0;
+    color: var(--backgroundSeashell);
+
+    /* width: 25%; */
 
   }
 
@@ -593,74 +603,9 @@ p.copywright-reserved {
     display: inline;
   }
 
-
+  .hide-on-mobile {
+    display: block;
+  }
 }
 
 /* ****************************/
-
-
-/* Menu Icon */
-
-.hamb {
-  cursor: pointer;
-  /* float: right; */
-  padding: 0 20px;
-}
-
-
-.hamb-line {
-  background: var(--grey);
-  display: block;
-  height: 3px;
-  position: relative;
-  width: 24px;
-
-}
-
-.hamb-line::before,
-.hamb-line::after {
-  /* background: var(--backgroundSeashell); */
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.hamb-line::before {
-  top: 7.5px;
-  background: var(--eerieBlack);
-}
-
-.hamb-line::after {
-  top: -7.5px;
-  background: var(--burntOrange);
-}
-
-
-.side-menu {
-  display: none;
-}
-
-/* Toggle menu icon */
-
-.side-menu:checked~nav {
-  max-height: 100vh;
-  top: 75px;
-}
-
-.side-menu:checked~.hamb .hamb-line {
-  background: transparent;
-}
-
-.side-menu:checked~.hamb .hamb-line::before {
-  transform: rotate(-45deg);
-  top: 0;
-
-}
-
-.side-menu:checked~.hamb .hamb-line::after {
-  transform: rotate(45deg);
-  top: 0;
-}

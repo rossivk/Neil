@@ -35,29 +35,31 @@
   margin: 50px auto;
 }
 
-.page-title {
+div.page-title {
+  height: 125px;
+  width: 100%;
   text-align: left;
-  padding: 75px 0 50px 10%;
-  background-color: var(--peralBrush);
+  padding: 75px 0 0 10%;
+  background-image: url('..//assets/images/background/faqs-background.png');
+  background-color: #ff80001a;
 }
 
-.page-title::before {
+/* div.page-title::before {
   content: '';
   color: transparent;
-  background-image: url('..//assets/images/background/faqs-background.jpg');
+  background-image: url('..//assets/images/background/faqs-background.png');
   position: absolute;
   top: 0%;
   left: 0;
   height: 100%;
   opacity: 1;
-
-}
+} */
 
 
 .faqs-list {
   padding: 10px;
   text-align: left;
-  margin: 0 50px;
+  margin: 0 25px;
   border-left: solid 1px var(--burntOrange);
 }
 
@@ -71,7 +73,7 @@ div.faqs-list li a {
 }
 
 .faq-content-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 
 }
@@ -79,17 +81,16 @@ div.faqs-list li a {
 .faq-content {
   padding: 50px 25px;
   text-align: left;
-  background-color: var(--peralBrush)
 }
 
 .back-to-faqs-list {
   width: 100%;
   background-color: var(--burntOrange);
-  padding: 25px;
+  padding: 25px 0 25px 10%;
   /* color: var(--backgroundSeashell); */
   border-radius: 0;
   font-size: 1.5rem;
-  ;
+  text-align: left;
 }
 
 .back-to-faqs-list:hover {
@@ -110,4 +111,8 @@ div.faqs-list li a {
     justify-content: center;
   }
 
+  .faqs-list {
+
+    margin: 0 50px;
+  }
 }
