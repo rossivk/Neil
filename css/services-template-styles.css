@@ -20,6 +20,7 @@ h4.underlined-text::after {
 }
 
 .services {
+  position: relative;
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
@@ -27,17 +28,17 @@ h4.underlined-text::after {
 }
 
 .services-left {
-  color: var(--eerieBlack);
-  width: 25%;
   background-color: var(--burntOrange);
-  text-align: left;
-  margin: 50px 0 0 10%;
+  width: 25%;
+  padding: 50px 0 0 10%
 }
+
+
 
 .services-left li {
   list-style-type: square;
   color: var(--backgroundSeashell);
-  margin: 25px 0;
+  margin-bottom: 25px;
 }
 
 
@@ -52,6 +53,45 @@ h4.underlined-text::after {
   margin: 50px auto;
   max-width: 650px;
 }
+
+/* #mySidebar.services-left.sidebar::after {
+  display: block;
+  content: url(../assets/icons/angles-left-solid.svg);
+  width: 25px;
+  height: 15px;
+  background: rgb(255, 191, 0);
+  position: absolute;
+  top: 0;
+  left: 35%;
+} */
+
+.close-sidebar {
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.open-sidebar {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 20px;
+  height: 20px;
+}
+
+.open-sidebar::before {
+  display: block;
+  content: '>';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
+
+
+
+/* ***************************** */
 
 .faqs {
   min-width: 300px;
@@ -167,3 +207,6 @@ button.back-to-faqs-list:hover {
   }
 
 }
+
+
+/* ********************** */

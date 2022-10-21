@@ -78,20 +78,28 @@ function myFunction() {
 ///////////////////////////////////////////////
 
 function openContent() {
-  let y = document.getElementById("dropDownContent");
-  if (y.style.display === "block") {
-    y.style.display = "none";
+  let y = document.getElementById('dropDownContent');
+  if (y.style.display === 'block') {
+    y.style.display = 'none';
   } else {
-    y.style.display = "block";
+    y.style.display = 'block';
   }
 }
 
 
+///////////////////////////////////////////////
+document.getElementById('openSidebar').addEventListener('click', openNav);
+document.getElementById('closeSidebar').addEventListener('click', closeNav);
 
-// function openContent() {
-//   document.getElementById("dropDownContent").style.display = "block";
-// }
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("main").style.marginLeft = "auto";
+  document.getElementById('closeSidebar').style.display = 'block';
 
-// function closeContent() {
-//   document.getElementById("dropDownContent").style.display = "none";
-// }
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "1%";
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById('closeSidebar').style.display = 'none';
+}
