@@ -41,6 +41,18 @@
   background-color: var(--peralBrush);
 }
 
+.page-title::before {
+  content: '';
+  color: transparent;
+  background-image: url('..//assets/images/background/faqs-background.jpg');
+  position: absolute;
+  top: 0%;
+  left: 0;
+  height: 100%;
+  opacity: 1;
+
+}
+
 
 .faqs-list {
   padding: 10px;
