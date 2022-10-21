@@ -102,7 +102,7 @@ h4.underlined-text::after {
 
 .page-title {
   /* height: 125px; */
-  width: 100%;
+  /* width: 100%; */
   text-align: left;
   padding: 75px 0 75px 10%;
   background-image: url('..//assets/images/background/faqs-background.png');
