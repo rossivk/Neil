@@ -75,8 +75,10 @@ h4.underlined-text::after {
   position: absolute;
   top: 0;
   left: 35%;
-  width: 20px;
+  width: 50px;
   height: 20px;
+  border: solid 1px black;
+  cursor: pointer
 }
 
 .open-sidebar::before {
