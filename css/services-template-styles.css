@@ -31,16 +31,22 @@
 }
 
 .faqs {
-  max-width: 1600px;
+  min-width: 300px;
   margin: 50px auto;
 }
 
+.page-title {
+  text-align: left;
+  padding: 75px 0 50px 10%;
+  background-color: var(--peralBrush);
+}
+
+
 .faqs-list {
-  max-width: 600px;
   padding: 10px;
   text-align: left;
-  margin: 0 auto;
-  background-color: var(--peralBrush)
+  margin: 0 50px;
+  border-left: solid 1px var(--burntOrange);
 }
 
 div.faqs-list li {
@@ -81,4 +87,15 @@ div.faqs-list li a {
 
 .back-to-faqs-list i {
   padding-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+
+  .faqs {
+    display: flex;
+    max-width: 1600px;
+    margin: 50px auto;
+    justify-content: center;
+  }
+
 }
