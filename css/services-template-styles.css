@@ -34,19 +34,22 @@ h4.underlined-text::after {
 }
 
 
+.services-left ul {
+  text-align: left;
+  margin: 0;
+  font-size: 1.125rem;
+  padding-left: 0;
+}
+
 
 .services-left li {
-  list-style-type: square;
+  /* list-style-type: square; */
   color: var(--backgroundSeashell);
   margin-bottom: 25px;
 }
 
 
-.services-left ul {
-  text-align: left;
-  margin: 0;
-  font-size: 1.125rem;
-}
+
 
 .services-right {
   text-align: left;

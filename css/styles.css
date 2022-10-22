@@ -594,7 +594,7 @@ p.copywright-reserved {
   .nav_phone-number {
     order: 2;
     background-color: var(--burntOrange);
-    padding: 10px 0;
+    padding: 10px;
     color: var(--backgroundSeashell);
 
     /* width: 25%; */
@@ -605,6 +605,11 @@ p.copywright-reserved {
     float: right;
     padding-right: 10px;
     width: 10%;
+  }
+
+  i.fa-solid.fa-phone {
+    color: var(--backgroundSeashell);
+    cursor: pointer;
   }
 
   .nav_phone-number .phone-num {
