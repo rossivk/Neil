@@ -86,6 +86,26 @@ function openContent() {
   }
 }
 
+//////////////////////////
+
+let button = document.getElementById('toggle');
+
+button.onclick = function () {
+  let div = document.getElementById('mySidebar');
+  if (div.style.opacity !== '0') {
+    div.style.opacity = '0';
+    div.style.width = '0%';
+    button.innerHTML = 'Open';
+    div.style.transitionDuration = "1s";
+  }
+  else {
+    div.style.opacity = '1';
+    div.style.width = '25%';
+    div.style.transition = "1s";
+    // div.style.display = 'block';
+  }
+};
+
 
 ///////////////////////////////////////////////
 document.getElementById('openSidebar').addEventListener('click', openNav);

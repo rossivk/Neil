@@ -215,3 +215,12 @@ button.back-to-faqs-list:hover {
 
 
 /* ********************** */
+
+#mySidebar {
+  opacity: 1;
+}
+
+/*
+#mySidebar:hover {
+  display: none;
+} */
