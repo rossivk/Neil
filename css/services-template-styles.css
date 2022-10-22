@@ -29,8 +29,9 @@ h4.underlined-text::after {
 
 .services-left {
   background-color: var(--burntOrange);
-  width: 25%;
-  padding: 50px 0 0 10%
+  width: 0;
+  padding: 50px 5px 0;
+  opacity: 0;
 }
 
 
@@ -211,14 +212,27 @@ button.back-to-faqs-list:hover {
     color: var(--backgroundSeashell);
   }
 
+
+  .services-left {
+    /* background-color: var(--burntOrange); */
+    width: 25%;
+    padding: 50px 0 0 10%;
+    opacity: 1;
+  }
+
+  #toggle {
+    opacity: 0;
+    padding: 0;
+  }
+
 }
 
 
 /* ********************** */
 
-#mySidebar {
-  opacity: 1;
-}
+/* #mySidebar {
+  opacity: 0;
+} */
 
 /*
 #mySidebar:hover {
