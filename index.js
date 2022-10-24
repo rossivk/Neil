@@ -6,7 +6,7 @@ function myFunction() {
   const backgroundMenu = document.getElementsByClassName("nav-container");
   let tl1 = new TimelineLite({ paused: true, reversed: true });
 
-  if (window.innerWidth <= 800) {
+  if (window.innerWidth <= 900) {
     tl1.from(backgroundMenu, 0.5, {
       opacity: 0, x: 750
     });
@@ -77,53 +77,46 @@ function myFunction() {
 
 ///////////////////////////////////////////////
 
-function openContent() {
-  let y = document.getElementById('dropDownContent');
-  if (y.style.display === 'block') {
-    y.style.display = 'none';
-  } else {
-    y.style.display = 'block';
-  }
-}
+//
+
 
 //////////////////////////
 
-let button = document.getElementById('toggle');
+// let button = document.getElementById('toggle');
 
-button.onclick = function () {
-  let div = document.getElementById('mySidebar');
-  if (div.style.opacity !== '1') {
-    div.style.opacity = '1';
-    div.style.width = '25%';
-    div.style.transition = "0.5s";
-    button.innerHTML = 'Close';
+// button.onclick = function () {
+//   let div = document.getElementById('mySidebar');
+//   if (div.style.opacity !== '1') {
+//     div.style.opacity = '1';
+//     div.style.width = '25%';
+//     div.style.transition = "0.5s";
+//     button.innerHTML = 'Close';
+//   }
+//   else {
+//     div.style.opacity = '0';
+//     div.style.width = '0%';
+//     button.innerHTML = 'Open';
+//     div.style.transitionDuration = "0.5s";
 
-  }
-  else {
-    div.style.opacity = '0';
-    div.style.width = '0%';
-    button.innerHTML = 'Open';
-    div.style.transitionDuration = "0.5s";
 
-
-    // div.style.display = 'block';
-  }
-};
+//     // div.style.display = 'block';
+//   }
+// };
 
 
 ///////////////////////////////////////////////
-document.getElementById('openSidebar').addEventListener('click', openNav);
-document.getElementById('closeSidebar').addEventListener('click', closeNav);
+// document.getElementById('openSidebar').addEventListener('click', openNav);
+// document.getElementById('closeSidebar').addEventListener('click', closeNav);
 
-function openNav() {
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("main").style.marginLeft = "auto";
-  document.getElementById('closeSidebar').style.display = 'block';
+// function openNav() {
+//   document.getElementById("mySidebar").style.width = "25%";
+//   document.getElementById("main").style.marginLeft = "auto";
+//   document.getElementById('closeSidebar').style.display = 'block';
 
-}
+// }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "1%";
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById('closeSidebar').style.display = 'none';
-}
+// function closeNav() {
+//   document.getElementById("mySidebar").style.width = "1%";
+//   document.getElementById("main").style.marginLeft = "25%";
+//   document.getElementById('closeSidebar').style.display = 'none';
+// }

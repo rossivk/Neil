@@ -54,7 +54,7 @@ h4 {
   font-weight: 600;
 }
 
-h4 {
+h5 {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -62,7 +62,8 @@ h4 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -92,7 +93,7 @@ button:hover {
   background-size: cover;
   background-position: 50% 15%;
   width: 100%;
-  height: 620px;
+  height: 750px;
   position: absolute;
   top: 0;
   left: 0;
@@ -113,7 +114,6 @@ button:hover {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
   z-index: 20;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -146,9 +146,10 @@ li.nav-item.hide-on-mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
   /* width: 100%; */
-  text-align: left;
-  margin-left: 5%;
+  /* text-align: left; */
+  /* margin-left: 5%; */
   /* transition: width 2s; */
 }
 
@@ -184,9 +185,7 @@ li.nav-item.hide-on-mobile {
 
 
 .dropdown-content {
-  /* display: none; */
   width: 100%;
-  /* box-shadow: inset 2px 1px 13px 0px rgb(0 0 0 / 20%); */
   z-index: 1;
   background-color: var(--burntOrange);
 
@@ -213,10 +212,6 @@ li.nav-item.hide-on-mobile {
 
 
 
-.dropdown-content a:hover {
-  background-color: var(--peralBrush);
-  color: var(--eerieBlack);
-}
 
 button.dropbtn {
   border: none;
@@ -224,22 +219,16 @@ button.dropbtn {
   margin: 50px auto 25px;
 }
 
-button.dropbtn:hover {
-  /* cursor: none; */
-  transform: scale(1);
-  /* border: none; */
-  background-color: var(--burntOrange);
-  scale: 1rem;
-  border-radius: 0;
-}
+
+
 
 
 .nav_phone-number {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
   /* background-color: var(--burntOrange); */
-  width: 20%;
+  /* width: 20%; */
   /* padding: 10px 0; */
 }
 
@@ -278,7 +267,7 @@ button.dropbtn:hover {
 }
 
 .tittle-content {
-  background: rgba(30, 12, 2, 0.35);
+  background: rgba(203, 83, 2, 0.35);
   color: var(--backgroundSeashell);
   text-align: center;
   padding: 25px;
@@ -291,7 +280,7 @@ button.dropbtn:hover {
 
 .top-section {
   opacity: 1;
-  padding: 150px 0 100px;
+  padding: 100px 0;
   background-color: rgba(83, 33, 0, 0.25);
   height: 260px;
 }
@@ -332,7 +321,7 @@ button.dropbtn:hover {
 
 .our-work-containers-wrapper-content p {
   max-width: 250px;
-  margin: 25px auto;
+  margin: 15px auto;
 
 }
 
@@ -473,9 +462,9 @@ p.copywright-reserved {
 /********** media screen ****************/
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   h2 {
@@ -507,7 +496,28 @@ p.copywright-reserved {
   }
 
   .top-section {
-    height: 249px;
+    height: 465px;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .top-section .tittle-name {
+    padding: 10px 5%;
+    text-align: left;
+  }
+
+
+  .top-section .tittle-content {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 200px;
+    margin-top: 0px;
+    padding-top: 315px;
+    height: 325px;
+    font-size: 1.125rem;
+
   }
 
   .our-work-containers-wrapper {
@@ -521,7 +531,7 @@ p.copywright-reserved {
   }
 
   .logo {
-    width: 25%;
+    margin-left: 5%;
     order: 0;
 
   }
@@ -537,28 +547,44 @@ p.copywright-reserved {
     width: 50%;
   }
 
-  /* .nav-container {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  } */
+  .nav-menu li a {
+    /* font-size: 1.25rem; */
+    font-weight: 500;
+  }
 
   .nav-menu .nav-container {
     position: relative;
     background-color: transparent;
     top: 0;
     padding-bottom: 0;
-    /* right: 0;
-    width: 100%;
-    z-index: 1;
-    */
   }
 
+  a.active {
+    /* background: var(--burntOrange); */
+    color: var(--eerieBlack);
+    padding: 10px 20px 30px;
+    position: relative;
+  }
+
+  a.active::after {
+
+    display: block;
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: var(--burntOrange);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+  }
 
   .dropdown .dropbtn {
     display: inline;
     color: var(--eerieBlack);
     position: relative;
     margin-right: 25px;
+    /* font-size: 1.25rem; */
   }
 
   .fa-caret-down::before {
@@ -571,10 +597,26 @@ p.copywright-reserved {
   }
 
   .dropdown-content a {
-    color: var(--eerieBlack);
+    color: var(--backgroundSeashell);
     padding-left: 10px;
+  }
 
+  .dropdown-content a:hover {
+    background-color: var(--peralBrush);
+    color: var(--eerieBlack);
+  }
 
+  button.dropbtn:hover {
+    transform: scale(1);
+    background-color: var(--burntOrange);
+    scale: 1rem;
+    border-radius: 0;
+    padding: 10px 5px;
+    color: var(--backgroundSeashell);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
   .nav-link-wrapper {
@@ -583,7 +625,7 @@ p.copywright-reserved {
   }
 
   .nav-link-wrapper li {
-    margin-right: 20px;
+    margin-right: 25px;
 
   }
 
@@ -594,27 +636,30 @@ p.copywright-reserved {
   .nav_phone-number {
     order: 2;
     background-color: var(--burntOrange);
-    padding: 10px;
+    padding: 28px 10px;
     color: var(--backgroundSeashell);
-
-    /* width: 25%; */
-
+    margin-right: 5%;
+    min-width: 230px;
   }
 
   .nav_phone-number .phone-icon {
-    float: right;
-    padding-right: 10px;
-    width: 10%;
+    float: left;
+    /* padding-right: 10px; */
+    width: 30px;
   }
 
   i.fa-solid.fa-phone {
+    font-size: 1.75rem;
     color: var(--backgroundSeashell);
     cursor: pointer;
   }
 
   .nav_phone-number .phone-num {
     display: inline;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
+
 
   .hide-on-mobile {
     display: block;

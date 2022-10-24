@@ -56,6 +56,7 @@ h4.underlined-text::after {
   text-align: left;
   margin: 50px auto;
   max-width: 650px;
+  padding: 0 25px;
 }
 
 /* #mySidebar.services-left.sidebar::after {
