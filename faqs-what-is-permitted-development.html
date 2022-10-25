@@ -19,13 +19,12 @@
 <body>
   <main class="wrapper">
     <header class="navbar">
-
       <div class="nav-menu">
         <div class="nav-container">
           <div class="nav-link-wrapper">
-            <li class="nav-item hide-on-mobile"><a href="#index">Home</a></li>
+            <li class="nav-item hide-on-mobile"><a href="./index.html">Home</a></li>
             <div class="dropdown">
-              <button class="dropbtn" onclick="openContent()" onclick="closeContent()">Services
+              <button class="dropbtn">Services
                 <i class="fa-solid fa-caret-down"></i>
               </button>
               <div id="dropDownContent" class="dropdown-content">
@@ -37,12 +36,13 @@
                     Drawings</a></li>
               </div>
             </div>
-
-            <li class="nav-item"><a href="./faqs.html">FAQs</a></li>
+            <li class="nav-item"><a class="active" href="./faqs.html">FAQs</a></li>
             <li class="nav-item"><a href="#recent-work">About Us</a></li>
             <li class="nav-item"><a href="#contact-me">Contact Us</a></li>
           </div>
         </div>
+
+
         <svg viewBox="0 0 14 12" class="hamburger-icon" height="100px" width="120px">
           <path d="M13,2 L1,2" class="upper"
             style="fill: none; stroke: #191919; stroke-linecap: round; stroke-width: 1.5" />
@@ -59,12 +59,11 @@
         </a>
       </div>
       <div class="nav_phone-number">
-        <div class="phone-icon">
-          <i class="fa-solid fa-phone"></i>
-        </div>
-        <div class="phone-num">
-          <h3>01279 491285</h3>
-        </div>
+        <a class="phone-icon" href="tel:+441279491285"><i class="fa-solid fa-phone"></i></a>
+
+        <a class="phone-num" href="tel:+441279491285">01279 491285</a>
+
+
       </div>
 
     </header>
@@ -73,6 +72,7 @@
       <br>
       <h3>What is Permitted Development?</h3>
     </div>
+
     <button class="back-to-faqs-list" type="button" name="button"><i href="./faqs.html"
         class="fa-solid fa-angles-left"></i><a href="./faqs.html">Back to
         FAQs list</a></button>

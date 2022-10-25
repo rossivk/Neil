@@ -106,18 +106,14 @@ h4.underlined-text::after {
 }
 
 .page-title {
-  /* height: 125px; */
-  /* width: 100%; */
   text-align: left;
-  padding: 75px 0 75px 10%;
+  padding: 50px 0 50px 5%;
   background-image: url('..//assets/images/background/faqs-background.png');
   background-position: center;
   background-color: #ff80001a;
   max-width: 1600px;
   margin: 0 auto;
 }
-
-
 
 .faq-title h4 {
   color: var(--burntOrange);
@@ -184,6 +180,7 @@ button.back-to-faqs-list {
   text-align: left;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
+  border: none;
 }
 
 button.back-to-faqs-list:hover {
@@ -196,6 +193,9 @@ button.back-to-faqs-list:hover {
 }
 
 @media screen and (min-width: 800px) {
+  .page-title {
+    padding: 75px 0 75px 5%;
+  }
 
   .faqs {
     display: flex;

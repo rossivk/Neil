@@ -585,19 +585,17 @@ p.copywright-reserved {
     color: var(--eerieBlack);
     position: relative;
     margin-right: 25px;
-    /* font-size: 1.25rem; */
   }
 
   .fa-caret-down::before {
     color: var(--eerieBlack);
   }
 
-
-
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 61.5px;
+    width: 150%;
+    padding: 0 10px 20px;
   }
 
   .dropdown-content a {
@@ -614,7 +612,6 @@ p.copywright-reserved {
     border-radius: 0;
 
   }
-
 
   .dropdown:hover .dropdown-content {
     display: block;
