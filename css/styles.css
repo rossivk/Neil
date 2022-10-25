@@ -81,7 +81,7 @@ button {
 button:hover {
   cursor: pointer;
   /* transform: scale(1.1); */
-  /* border: 1px solid var(--burntOrange); */
+  border: 1px solid var(--burntOrange);
   background-color: transparent;
   /* scale: 1.05rem; */
 }
@@ -512,11 +512,12 @@ p.copywright-reserved {
     position: absolute;
     top: 0;
     right: 5%;
-    width: 200px;
+    width: 220px;
     margin-top: 0px;
-    padding-top: 315px;
-    height: 325px;
+    padding: 315px 15px 0;
+    height: 350px;
     font-size: 1.125rem;
+    text-align: left;
 
   }
 
@@ -591,9 +592,12 @@ p.copywright-reserved {
     color: var(--eerieBlack);
   }
 
+
+
   .dropdown-content {
     display: none;
     position: absolute;
+    top: 61.5px;
   }
 
   .dropdown-content a {
@@ -607,13 +611,10 @@ p.copywright-reserved {
   }
 
   button.dropbtn:hover {
-    transform: scale(1);
-    background-color: var(--burntOrange);
-    scale: 1rem;
     border-radius: 0;
-    padding: 10px 5px;
-    color: var(--backgroundSeashell);
+
   }
+
 
   .dropdown:hover .dropdown-content {
     display: block;
