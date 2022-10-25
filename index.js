@@ -6,7 +6,7 @@ function myFunction() {
   const backgroundMenu = document.getElementsByClassName("nav-container");
   let tl1 = new TimelineLite({ paused: true, reversed: true });
 
-  if (window.innerWidth <= 900) {
+  if (window.innerWidth <= 1024) {
     tl1.from(backgroundMenu, 0.5, {
       opacity: 0, x: 750
     });

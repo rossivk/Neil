@@ -1,5 +1,6 @@
 h4.underlined-text {
   position: relative;
+  margin-bottom: 50px;
 }
 
 h4.underlined-text::after {
@@ -29,9 +30,9 @@ h4.underlined-text::after {
 
 .services-left {
   background-color: var(--burntOrange);
-  width: 0;
+  /* width: 0; */
   padding: 50px 5px 0;
-  opacity: 0;
+  display: none;
 }
 
 
@@ -192,7 +193,7 @@ button.back-to-faqs-list:hover {
   padding-right: 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .page-title {
     padding: 75px 0 75px 5%;
   }
@@ -218,7 +219,7 @@ button.back-to-faqs-list:hover {
     /* background-color: var(--burntOrange); */
     width: 25%;
     padding: 50px 0 0 10%;
-    opacity: 1;
+    display: block;
   }
 
   #toggle {
