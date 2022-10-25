@@ -102,8 +102,11 @@ h4.underlined-text::after {
 /* ***************************** */
 
 .faqs {
+  display: flex;
   min-width: 300px;
-  margin: 50px auto;
+  margin: 50px 5%;
+  position: relative;
+  flex-direction: column;
 }
 
 .page-title {
@@ -121,23 +124,10 @@ h4.underlined-text::after {
 }
 
 
-
-/* div.page-title::before {
-  content: '';
-  color: transparent;
-  background-image: url('..//assets/images/background/faqs-background.png');
-  position: absolute;
-  top: 0%;
-  left: 0;
-  height: 100%;
-  opacity: 1;
-} */
-
-
 .faqs-list {
   padding: 0 10px;
   text-align: left;
-  margin: 0 25px;
+  /* margin: 0 25px; */
   border-left: solid 1px var(--burntOrange);
 }
 
@@ -150,9 +140,10 @@ div.faqs-list li a {
 
 }
 
+
 .faq-content-wrapper {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto 0;
 
 }
 
@@ -172,16 +163,19 @@ div.faqs-list li a {
 }
 
 button.back-to-faqs-list {
-  width: 100%;
+  /* width: 100%; */
   background-color: rgba(203, 83, 2, 0.55);
-  margin: 12px 0;
-  padding: 12px 0 12px 10%;
+  /* margin: 12px 0; */
+  /* padding: 12px 0 12px 10%; */
   border-radius: 0;
   font-size: 1.5rem;
-  text-align: left;
+  /* text-align: left; */
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border: none;
+  position: absolute;
+  top: 0;
+  left: 5%;
 }
 
 button.back-to-faqs-list:hover {
@@ -193,13 +187,129 @@ button.back-to-faqs-list:hover {
   padding-right: 10px;
 }
 
+
+
+/* ****About Us** */
+
+.background-img-about-us {
+  background-image: url(../assets/images/background-top-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 15%;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.top-section-about-us {
+  opacity: 1;
+  padding: 100px 0;
+  background-color: rgba(83, 33, 0, 0.25);
+  height: 91px;
+}
+
+.tittle-name-about-us {
+  background: rgba(203, 83, 2, 0.35);
+  color: var(--backgroundSeashell);
+  text-align: center;
+  padding: 10px 5%;
+  /* margin-top: 150px; */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+/* .tittle-content-about-us {
+  background: rgba(203, 83, 2, 0.35);
+  color: var(--backgroundSeashell);
+  text-align: center;
+  padding: 25px;
+  margin-top: 100px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+} */
+.who-are-we {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.who-are-we-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px 5% 0;
+
+}
+
+.who-are-we-box {
+  margin: 35px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+}
+
+
+.text-initial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+
+}
+
+.who-are-we-box:hover .text-initial {
+  display: none;
+}
+
+.text-on-hover {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  display: none;
+  color: white;
+}
+
+.who-are-we-box:hover .text-on-hover {
+  display: block;
+
+}
+
+
+.who-are-we-box.planning-drawings {
+  background: rgb(166, 139, 113);
+}
+
+.who-are-we-box.planning-drawings:hover {
+  background: rgb(59, 43, 29);
+  color: var(--backgroundSeashell);
+  cursor: pointer;
+}
+
+
+.about-us-wrapper {
+  background-color: #cb52021e;
+  padding: 50px 25px;
+  margin-top: 50px;
+}
+
+.about-us-info {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+
 @media screen and (min-width: 1024px) {
   .page-title {
     padding: 75px 0 75px 5%;
   }
 
   .faqs {
-    display: flex;
+    /* display: flex; */
     max-width: 1600px;
     margin: 50px auto;
     justify-content: center;
@@ -227,16 +337,9 @@ button.back-to-faqs-list:hover {
     padding: 0;
   }
 
+  /******* About Us **************************/
+
+  .top-section-about-us {
+    height: 66px;
+  }
 }
-
-
-/* ********************** */
-
-/* #mySidebar {
-  opacity: 0;
-} */
-
-/*
-#mySidebar:hover {
-  display: none;
-} */

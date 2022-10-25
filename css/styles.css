@@ -257,6 +257,18 @@ button.dropbtn {
   display: none;
 }
 
+
+
+/* *********************************** */
+
+.top-section {
+  opacity: 1;
+  padding: 100px 0;
+  background-color: rgba(83, 33, 0, 0.25);
+  height: 491px;
+}
+
+
 .tittle-name {
   background: rgba(203, 83, 2, 0.35);
   color: var(--backgroundSeashell);
@@ -276,20 +288,6 @@ button.dropbtn {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
-
-/* *********************************** */
-
-.top-section {
-  opacity: 1;
-  padding: 100px 0;
-  background-color: rgba(83, 33, 0, 0.25);
-  height: 491px;
-}
-
-.top-section tittle {
-  text-align: center;
-}
-
 
 /* our work */
 
