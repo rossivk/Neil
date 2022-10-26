@@ -1,6 +1,6 @@
 h4.underlined-text {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 h4.underlined-text::after {
@@ -26,6 +26,7 @@ h4.underlined-text::after {
   max-width: 1600px;
   margin: 0 auto;
   align-content: flex-start;
+  background-color: var(--backgroundSeashell);
 }
 
 .services-left {
@@ -103,25 +104,34 @@ h4.underlined-text::after {
 
 .faqs {
   display: flex;
-  min-width: 300px;
-  margin: 50px 5%;
+  /* min-width: 300px; */
+  /* margin: 0 5%; */
+  padding: 75px 5% 50px;
   position: relative;
   flex-direction: column;
+  background-color: var(--backgroundText);
 }
 
 .page-title {
   text-align: left;
-  padding: 50px 0 50px 5%;
-  background-image: url('..//assets/images/background/faqs-background.png');
-  background-position: center;
-  background-color: #ff80001a;
+  padding: 25px 0 25px 5%;
+  background-image: url('..//assets/images/rear_extention_zinc_roof_16-2.jpg');
+  background-position: 40%;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
 }
 
+.page-title h3 {
+  color: var(--backgroundSeashell);
+}
+
+
 .faq-title h4 {
   color: var(--burntOrange);
 }
+
+
 
 
 .faqs-list {
@@ -142,49 +152,52 @@ div.faqs-list li a {
 
 
 .faq-content-wrapper {
-  max-width: 800px;
-  margin: 50px auto 0;
+  max-width: 650px;
+  margin: 0 auto;
 
 }
 
 .faq-title,
 .faq-content {
   text-align: left;
-  padding: 12px 25px;
-  margin: 12px;
-}
-
-.faq-title {
-  background: rgb(203 83 2 / 20%);
 }
 
 .faq-content {
-  background: rgb(203 83 2 / 5%);
+  padding-top: 25px;
 }
 
+
 button.back-to-faqs-list {
-  /* width: 100%; */
-  background-color: rgba(203, 83, 2, 0.55);
-  /* margin: 12px 0; */
-  /* padding: 12px 0 12px 10%; */
+  background-color: var(--burntOrange);
   border-radius: 0;
-  font-size: 1.5rem;
-  /* text-align: left; */
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border: none;
+  border: transparent;
   position: absolute;
   top: 0;
   left: 5%;
 }
 
 button.back-to-faqs-list:hover {
-  background-color: rgba(203, 83, 2, 0.35);
+  background-color: transparent;
+  border: solid 1px var(--burntOrange);
 }
 
 
 .back-to-faqs-list i {
   padding-right: 10px;
+  color: var(--backgroundSeashell);
+}
+
+.back-to-faqs-list a {
+  color: var(--backgroundSeashell);
+}
+
+.back-to-faqs-list:hover i {
+  padding-right: 10px;
+  color: var(--eerieBlack);
+}
+
+.back-to-faqs-list:hover a {
+  color: var(--eerieBlack);
 }
 
 
@@ -302,17 +315,18 @@ button.back-to-faqs-list:hover {
   margin: 0 auto;
 }
 
-
 @media screen and (min-width: 1024px) {
   .page-title {
-    padding: 75px 0 75px 5%;
+    padding: 50px 0 50px 5%;
   }
 
   .faqs {
     /* display: flex; */
     max-width: 1600px;
-    margin: 50px auto;
+    margin: 0 auto;
     justify-content: center;
+    flex-direction: row;
+    background-color: var(--backgroundText);
   }
 
   .faqs-list {
@@ -327,8 +341,8 @@ button.back-to-faqs-list:hover {
 
   .services-left {
     /* background-color: var(--burntOrange); */
-    width: 25%;
-    padding: 50px 0 0 10%;
+    width: 17.5%;
+    padding: 50px 0 0 5%;
     display: block;
   }
 

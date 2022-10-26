@@ -4,6 +4,8 @@
   --backgroundSeashell: #F8F5F2;
   /* --whiteCiltured: #F1F5F8; */
   --burntOrange: #CB5302;
+  --backgroundText: rgba(202, 82, 2, 0.05);
+
 }
 
 
@@ -45,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -292,7 +294,7 @@ button.dropbtn {
 /* our work */
 
 #our-work {
-  /* background-color: var(--peralBrush); */
+  background-color: var(--backgroundText);
   position: relative;
   padding: 75px 0;
   max-width: 1600px;
@@ -300,7 +302,7 @@ button.dropbtn {
 }
 
 .our-work-containers-wrapper-content {
-  width: 300px;
+  /* width: 300px; */
   padding: 25px;
   margin: 0 auto;
 }
@@ -369,7 +371,7 @@ button.our-work-get-in-touch:hover {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 853px;
+  height: 920px;
   position: absolute;
   top: 0;
   left: 0;
@@ -391,12 +393,12 @@ button.our-work-get-in-touch:hover {
 /**contact us ********************/
 
 #contact-us {
-  background-color: var(--peralBrush);
-  padding: 0 5vw 50px;
+  background-color: var(--backgroundText);
+  padding: 0 5%;
 }
 
 .contact-us-wrapper {
-  background-color: var(--peralBrush);
+  /* background-color: var(--peralBrush); */
   padding: 50px 10%;
   max-width: 350px;
   margin: 0 auto;
@@ -440,7 +442,6 @@ button.our-work-get-in-touch:hover {
 /* ***************************** */
 footer {
   background-color: var(--burntOrange);
-
 }
 
 .copywright {
@@ -458,6 +459,10 @@ p.copywright-reserved {
   color: var(--backgroundSeashell);
 }
 
+footer a {
+  color: var(--backgroundSeashell);
+}
+
 /********** media screen ****************/
 
 
@@ -471,7 +476,7 @@ p.copywright-reserved {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   h4 {
@@ -528,7 +533,7 @@ p.copywright-reserved {
 
 
   .why-us-background-img {
-    height: 751px;
+    height: 695px;
 
   }
 
