@@ -1,10 +1,11 @@
-h4.underlined-text {
+h4.underlined-text,
+h3.underlined-text {
   position: relative;
   margin-bottom: 25px;
 }
 
-h4.underlined-text::after {
-
+h4.underlined-text::after,
+h3.underlined-text::after {
   display: block;
   content: '';
   width: 100%;
@@ -14,6 +15,8 @@ h4.underlined-text::after {
   bottom: -5px;
   left: 0;
 }
+
+
 
 .link-with-burnt-orange-color {
   color: var(--burntOrange);
@@ -147,9 +150,14 @@ div.faqs-list li {
 
 div.faqs-list li a {
   color: var(--eerieBlack);
-
 }
 
+.faqs-list li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--burntOrange);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
 
 .faq-content-wrapper {
   max-width: 650px;
@@ -210,20 +218,25 @@ button.back-to-faqs-list:hover {
   background-size: cover;
   background-position: 50% 15%;
   width: 100%;
-  height: 350px;
+  height: 207px;
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 0;
   right: 0;
   opacity: 1;
   z-index: -1;
 }
 
+.page-title.about-us {
+  background-image: url('..//assets/images/about-us-1.jpg');
+
+}
+
 .top-section-about-us {
   opacity: 1;
-  padding: 100px 0;
-  background-color: rgba(83, 33, 0, 0.25);
-  height: 91px;
+  padding: 50px 0;
+  /* background-color: rgba(83, 33, 0, 0.25); */
+  height: 48px;
 }
 
 .tittle-name-about-us {
@@ -245,7 +258,7 @@ button.back-to-faqs-list:hover {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 } */
-.who-are-we {
+/* .who-are-we {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -263,10 +276,10 @@ button.back-to-faqs-list:hover {
   width: 200px;
   height: 250px;
   position: relative;
-}
+} */
 
 
-.text-initial {
+/* .text-initial {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -301,18 +314,40 @@ button.back-to-faqs-list:hover {
   background: rgb(59, 43, 29);
   color: var(--backgroundSeashell);
   cursor: pointer;
-}
+} */
 
 
 .about-us-wrapper {
-  background-color: #cb52021e;
+  background-color: var(--backgroundSeashell);
   padding: 50px 25px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .about-us-info {
   max-width: 550px;
   margin: 0 auto;
+}
+
+.about-us-info h3 {
+  color: var(--eerieBlack);
+}
+
+.the-team {
+  max-width: 550px;
+  margin: 51px auto;
+}
+
+.team {
+  text-align: left;
+  margin: 50px auto;
+  max-width: 300px;
+  background: var(--backgroundText);
+  padding: 25px;
+}
+
+.team p {
+  /* font-size: 1.125rem; */
+  line-height: 1.75rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -353,7 +388,17 @@ button.back-to-faqs-list:hover {
 
   /******* About Us **************************/
 
-  .top-section-about-us {
-    height: 66px;
+  .background-img-about-us {
+    height: 275px;
   }
+
+  .top-section-about-us {
+    height: 90px;
+  }
+
+  .team p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
 }
