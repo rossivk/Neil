@@ -569,7 +569,7 @@ footer a {
   a.active {
     /* background: var(--burntOrange); */
     color: var(--eerieBlack);
-    padding: 10px 20px 30px;
+    padding: 10px 0 30px;
     position: relative;
   }
 
