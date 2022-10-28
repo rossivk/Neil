@@ -142,6 +142,7 @@ li.nav-item.hide-on-mobile {
   width: 100%;
   z-index: 1;
   padding-bottom: 10px;
+  opacity: 0;
 }
 
 .nav-link-wrapper {
@@ -559,6 +560,10 @@ footer a {
     font-weight: 500;
   }
 
+  .nav-container {
+    opacity: 1;
+  }
+
   .nav-menu .nav-container {
     position: relative;
     background-color: transparent;
@@ -616,7 +621,6 @@ footer a {
 
   button.dropbtn:hover {
     border-radius: 0;
-
   }
 
   .dropdown:hover .dropdown-content {
