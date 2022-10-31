@@ -74,7 +74,7 @@
       <h3 style="opacity:0">Transparent</h3>
     </div>
 
-    <section id="contactMe">
+    <section id="contact" class="section-content section-contact">
       <div class="box">
         <h3 class="active">Contact Us</h3>
         <br><br>
@@ -82,19 +82,26 @@
         <br><br><br>
         <p>Drop us a message.</p>
 
-        <form id="contact" action="mailto:mailto:enquiry@domname.com" method="post">
-          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        <form id="section-contact-form" class="section-contact-form">
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="sendEmail.php">
             <fieldset>
-              <input placeholder="Your name" type="text" tabindex="1" required>
+              <input placeholder="Your name" type="text" name="name" id="name" tabindex="1" required>
+              <p class="section-contact-form-error">Please enter a valid name!</p>
             </fieldset>
             <fieldset>
-              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              <input placeholder="Your Email Address" type="email" name="email" id="email" tabindex="2" required>
+              <p class="section-contact-form-error">Please enter a valid email!</p>
             </fieldset>
             <fieldset>
-              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+              <textarea placeholder="Type your message here...." name="message" id="message" tabindex="5"
+                required></textarea>
+              <p class="section-contact-form-error">Please enter a message!</p>
             </fieldset>
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              <p id="form-submit-success" class="section-contact-form-success">Form successfully sent!</p>
+              <p id="form-submit-error" class="section-contact-form-error">An error occured, please try again later or
+                use the other contact methods!</p>
             </fieldset>
           </form>
           <br><br>
@@ -123,6 +130,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
+  <script src="conatct.js" charset="utf-8"></script>
+
 
 
 </body>
