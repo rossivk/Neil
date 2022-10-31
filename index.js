@@ -45,5 +45,7 @@ document
       document.getElementById("container").style.opacity = '0';
     } else {
       document.getElementById("container").style.opacity = '1';
+      document.getElementById("container").style.pointerEvents = 'auto';
+
     }
   });
